@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BINGO!</title>
+  <link rel="shortcut icon" href="logo-ikonica.png">
+  <link rel="stylesheet" href="slova.css" type="text/css">
+  <link rel="stylesheet" href="bingo.css" type="text/css">
+  <link rel="stylesheet" href="mobilni.css" type="text/css">
+ 
+  </head>
+  <body>
+      <div id="workbench">
+              <header>
+               
+                <p class="uvod" id="slob">b</p>
+                <p class="uvod" id="sloi">i</p>
+                <p class="uvod" id="slon">n</p>
+                <p class="uvod" id="slog">g</p>
+                <p class="uvod" id="sloo">o</p>
+                <div id="zvezda"></div>
+              </header>
+
+              <main>
+
+          <!-- OKVIR ZA IZBOR BROJEVA IGRACA,I SHEMA KOJA IDE UZ TO       -->
+          <article id="izbor">
+                    <h2 id="utekst">Izaberite svojih 15 brojeva za igru</h2>
+                      <div id="tabi">
+                        
+                            <div id="izb1" class="izbokvir" onclick="a1()">1</div>
+                            <div id="izb2" class="izbokvir" onclick="a2()">2</div>
+                            <div id="izb3" class="izbokvir" onclick="a3()">3</div>
+                            <div id="izb4" class="izbokvir" onclick="a4()">4</div>
+                            <div id="izb5" class="izbokvir" onclick="a5()">5</div>
+                            <div id="izb6" class="izbokvir" onclick="a6()">6</div>
+                            <div id="izb7" class="izbokvir" onclick="a7()">7</div>
+                            <div id="izb8" class="izbokvir" onclick="a8()">8</div>
+                            <div id="izb9" class="izbokvir" onclick="a9()">9</div>
+                            <div id="izb10" class="izbokvir" onclick="a10()">10</div>
+                        
+                        
+                          <div id="izb11" class="izbokvir" onclick="a11()">11</div>
+                          <div id="izb12" class="izbokvir" onclick="a12()">12</div>
+                          <div id="izb13" class="izbokvir" onclick="a13()">13</div>
+                          <div id="izb14" class="izbokvir" onclick="a14()">14</div>
+                          <div id="izb15" class="izbokvir" onclick="a15()">15</div>
+                          <div id="izb16" class="izbokvir" onclick="a16()">16</div>
+                          <div id="izb17" class="izbokvir" onclick="a17()">17</div>
+                          <div id="izb18" class="izbokvir" onclick="a18()">18</div>
+                          <div id="izb19" class="izbokvir" onclick="a19()">19</div>
+                          <div id="izb20" class="izbokvir" onclick="a20()">20</div>
+                      
+                      
+                        <div id="izb21" class="izbokvir" onclick="a21()">21</div>
+                        <div id="izb22" class="izbokvir" onclick="a22()">22</div>
+                        <div id="izb23" class="izbokvir" onclick="a23()">23</div>
+                        <div id="izb24" class="izbokvir" onclick="a24()">24</div>
+                        <div id="izb25" class="izbokvir" onclick="a25()">25</div>
+                        <div id="izb26" class="izbokvir" onclick="a26()">26</div>
+                        <div id="izb27" class="izbokvir" onclick="a27()">27</div>
+                        <div id="izb28" class="izbokvir" onclick="a28()">28</div>
+                        <div id="izb29" class="izbokvir" onclick="a29()">29</div>
+                        <div id="izb30" class="izbokvir" onclick="a30()">30</div>
+                    
+                      </div>
+          </article>
+<!-- KOMPJUTER BIRA BROJEVE,PAUZA DO IZVLACENJA -->
+<article id="medja">
+  
+  <h1 id="najava">kompjuter bira svoje brojeve</h1>
+  <div id="kanter"></div>
+</article>
+
+<!-- POSTAVLJANJE KADICE SA IZVUCENIM BROJEVIMA -->  
+
+</article>
+<article id="izvalce">
+  <div id="kadica">
+
+      <!-- <div class="izvb">15</div> -->
+      
+
+  </div>
+</article>
+
+<!-- ROTACIJA I POKAZIVAC ROTACIJE -->
+
+<article id="strelica">
+  <div id="pokazivac">
+    <h2 id="pot">IZVLAČENJE</h2>
+  </div>
+  <div id="okvrot">
+      <div id="rotkrug"></div>
+      <div id="rotz"></div>
+  </div>
+
+</article>
+
+  <!-- POSTAVLJANJE TABELE SA IZABRANIM BROJEVIMA       -->
+          <article id="tabele1">
+
+            <div class="pom1">
+            <div id="tabigrac">
+              <h2 class="ime">igrač</h2>
+              <div class="igrac">
+                
+                      <div id="i1" class="upisig">1</div>
+                      <div id="i2" class="upisig">2</div>
+                      <div id="i3" class="upisig">3</div>
+                  
+                  
+                      <div id="i4" class="upisig">4</div>
+                      <div id="i5" class="upisig">5</div>
+                      <div id="i6" class="upisig">6</div>
+                  
+                  
+                      <div id="i7" class="upisig">7</div>
+                      <div id="i8" class="upisig">8</div>
+                      <div id="i9" class="upisig">9</div>
+                  
+                  
+                      <div id="i10" class="upisig">10</div>
+                      <div id="i11" class="upisig">11</div>
+                      <div id="i12" class="upisig">12</div>
+                  
+                  
+                      <div id="i13" class="upisig">13</div>
+                      <div id="i14" class="upisig">14</div>
+                      <div id="i15" class="upisig">15</div>
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="pom2">
+              <div id="tabkomp">
+                <h2 class="ime">kompjuter</h2>
+              <div class="komp">
+                
+                    <div id="k1" class="upisko">1</div>
+                    <div id="k2" class="upisko">2</div>
+                    <div id="k3" class="upisko">3</div>
+                
+                
+                    <div id="k4" class="upisko">4</div>
+                    <div id="k5" class="upisko">5</div>
+                    <div id="k6" class="upisko">6</div>
+                
+                
+                    <div id="k7" class="upisko">7</div>
+                    <div id="k8" class="upisko">8</div>
+                    <div id="k9" class="upisko">9</div>
+                
+                
+                    <div id="k10" class="upisko">10</div>
+                    <div id="k11" class="upisko">11</div>
+                    <div id="k12" class="upisko">12</div>
+                
+                
+                    <div id="k13" class="upisko">13</div>
+                    <div id="k14" class="upisko">14</div>
+                    <div id="k15" class="upisko">15</div>
+                
+            </div>
+          </div>
+        </div>    
+          
+          </main>
+              <footer>
+                  <article id="kompw">
+                    <p id="komptekst">na žalost kompjuter je pobedio</p>
+                  </article>
+                  <article id="igracw">
+                      <p id="igractekst">pobedaaaaaaaaaa !!!</p>
+                  </article>
+                  <article id="nereseno">
+                      <p id="nepob">nema pobednika ovaj put,ne rešeno</p>
+                  </article>
+              </footer>
+              <div id="restart" onclick="restart()">
+                    <p id="zak">pocni ponovo</p>
+              </div>
+
+                
+      </div>
+  
+  </body>
+  <script src="bingo.js"></script>
+</html>

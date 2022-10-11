@@ -1,0 +1,172 @@
+@media screen and (max-width: 600px){
+
+    #workbench{
+        max-width:500px;
+        height: 1100px;
+        margin-left: auto;margin-right: auto;
+        margin-top: -10px;
+        background: rgb(255,0,0);
+    background: linear-gradient(176deg, rgba(255,0,0,0.6839110644257703) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 67%, rgba(0,31,255,0.6951155462184874) 100%);
+    }
+
+    @keyframes zvezda{
+        0%{width: 0px;height: 0px;transform: rotate(0deg);}
+        25%{width: 150px;height: 100px;transform: rotate(100deg);}
+        50%{width: 300px;height: 200px;transform: rotate(200deg);}
+       75%{width: 350px;height: 250px;transform: rotate(300deg);}
+        100%{width: 400px;height: 250px;transform: rotate(360deg);}
+    } 
+
+    .uvod{
+        display: inline;
+        position:relative;
+         font-size: 9em;
+         text-transform: uppercase;
+         font-family: "font1";
+         -webkit-text-stroke: 10px black;
+         color:transparent;
+         top: 60px;
+         z-index: 99;
+        }
+
+    #tabi{
+        max-width:400px;
+        padding: 20px;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .izbokvir{
+        font-size: 1.5cm;
+        font-family: "font2";
+        text-align: center;
+        padding: 2px;
+        border-radius: 15px;
+        background-color: blanchedalmond;
+        user-select: none;
+    }
+
+    #tabigrac,#tabkomp{
+        display: inline-block;
+        position: relative;
+        top:-420px;
+        left: 50px;
+    }
+
+    #kadica{
+        position: absolute;
+        left: 45%;
+        top: 80%;
+        width: 270px;
+       
+    }
+
+    .izvb{
+        display: inline-block;
+        width:40px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 2px;
+        font-size: 35px;
+    }
+
+
+    .igrac,.komp{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: space-around;
+        padding: 10px;
+       position: relative;
+        border: 6px solid black;
+        border-radius: 0 0 15px 15px;
+        float: left;
+        right: 30px;
+       
+        background-image:url("nebula.jpg");
+        background-size: cover;
+    
+    }
+    
+    .upisig,.upisko{
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 50%;
+        font-size: 1cm;
+        color: blanchedalmond;
+    }
+    .pom1{
+        margin-top: 20px;
+        display:block;
+    }
+    
+    .pom2{
+        display:inline;
+        margin-left: 0;
+    }
+
+    #pokazivac{
+        position: relative;
+        top: 100px;
+        background-color: chartreuse;
+        margin-left: auto;margin-right: auto;
+        width:130px;
+        height: 65px;
+        clip-path: polygon(0% 0%, 100% 2%, 100% 50%, 50% 100%, 0 50%);
+    }
+
+    #pot{
+   
+        font-size: 20px;
+        margin-left: 3px;
+        
+    }
+
+    #rotkrug{
+       /*  iz ove pozicije menjam velicinu teksta u krugu */
+        position: relative;
+        left: 50px;
+        top: -2px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-image: url(zid.jpg);
+        background-size: cover;
+        backface-visibility: hidden;
+        animation: rot 1s linear ;
+        animation-iteration-count: 2;
+        color: yellow;
+        font-size: 80px;
+        text-align: center;
+    
+    }
+
+    #rotz{
+        position: absolute;
+        left:50px;
+        top: -2px;
+        width: 100px;
+        height: 100px;
+         border-radius: 50%;
+         background-color: rgb(37, 35, 35);
+         backface-visibility: hidden;
+         transform: rotateY(180deg);
+         animation: rot 1s linear ;
+         animation-iteration-count: 2;
+    
+    
+    }
+
+
+
+    #strelica{
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+
+
+
+
+}

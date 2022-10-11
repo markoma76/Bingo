@@ -1,0 +1,29 @@
+@font-face {
+    /* Bernard MT Condensed */
+    font-family:font1;
+    src: url(fonts/BERNHC.TTF);
+  }
+
+  @font-face {
+    /* impact */
+    font-family:font2;
+    src: url(fonts/impact.ttf);
+  }
+
+  @font-face {
+    /* stencil */
+    font-family:font3;
+    src: url(fonts/STENCIL.TTF);
+  }
+
+  @font-face {
+    /* Gabriola */
+    font-family:font4;
+    src: url(fonts/Gabriola.ttf);
+  }
+
+  @font-face {
+    /* Comic Sans MS */
+    font-family:font5;
+    src: url(fonts/comic.ttf);
+  }
